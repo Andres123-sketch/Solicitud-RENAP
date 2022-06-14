@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">    
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+<title>RENAP || Nacimiento</title>
+</head>
+<body>
+
+    <script>
+        function SoloNumeros(evt)
+        {
+        if(window.event){
+        keynum = evt.keyCode;
+        }
+        else{
+        keynum = evt.which;
+        }
+        if((keynum > 47 && keynum < 58) || (keynum > 64 && keynum < 123) || keynum == 8 || keynum== 13
+        || keynum== 130 || (keynum > 159 && keynum < 164))
+        {
+        return true;
+        }
+        else
+        {
+        alert("No se permite el ingreso de caracteres especiales");
+        return false;
+        }
+        }
+        </script>
+    <section>
+        <img id="log" src="./img/logo.jpeg" alt="">
+        <img id="log2" src="./img/nac.jpeg" alt="">
+        <h4 id="txt4">No. De INSCRIPCION</h4>
+        <input id="text" type="">
+
+        <h1 id="txt1">SOLICITUD DE INSCRIPCION DE NACIMIENTO</h1>
+        <h3 id="txt2">Registro Nacional de las Personas -RENAP-</h3>
+        <h4 id="txt3">Registro Civil de las Personas</h4>
+        <input type="date" id="fech" value="2000-01-01" min="2000-01-01" max="2022-12-31" required onkeypress="return SoloNumeros(event);"">
+    </section>
+
+    <section>
+        <br><br>
+        <h6 id="txt6">Respetuosamente solicito al Registrador Civil de las Personas realizar Inscripción de Nacimiento de conformidad a los siguientes datos:</h6>
+        <h4 id="txt7">1. DATOS DE LA PERSONA MENOR DE EDAD:</h4>
+        <h5 id="txt8">Nombres y Apellidos:</h5>
+        <input id="text1" type="text" required onkeypress="return SoloNumeros(event);"">
+        <h5 id="txt8">Fecha de nacimiento:</h5>
+        <input id="text2" type="text" required onkeypress="return SoloNumeros(event);"">
+        <h5 id="txt8">Lugar donde ocurrio el nacimiento:</h5>
+        <input id="text3" type="text" required onkeypress="return SoloNumeros(event);"">
+        <h4 id="txt10">Departamento de nacimiento:</h4>
+        <select name="CboCurso" id="txt9">
+            <option value="Alta Verapaz">Alta Verapaz</option>
+            <option value="Baja Verapaz">Baja Verapaz</option>
+            <option value="Chimaltenago">Chimaltenago</option>
+            <option value="Chiquimula">Chiquimula</option>
+            <option value="Guatemala">Guatemala</option>
+            <option value="El Progreso">El Progreso</option>
+            <option value="Escuintla">Escuintla</option>
+            <option value="Huehuetenango">Huehuetenango</option>
+            <option value="Izabal">Izabal</option>
+            <option value="Jalapa">Jalapa</option>
+            <option value="Jutiapa">Jutiapa</option>
+            <option value="Petén">Petén</option>
+            <option value="Quiché">Quiché</option>
+            <option value="Retalhuleu">Retalhuleu</option>
+            <option value="Sacatepequez">Sacatepequez</option>
+            <option value="San Marcos">San Marcos</option>
+            <option value="Santa Rosa">Santa Rosa</option>
+            <option value="Sololá">Sololá</option>
+            <option value="Suchitepequez">Suchitepequez</option>
+            <option value="Totonicapán">Totonicapán</option>
+            <option value="Zacapa">Zacapa</option>
+        </select>
+        <h4 id="txt11">Municipio de Nacimiento:</h4>
+        <input id="text5" type="text" required onkeypress="return SoloNumeros(event);"">
+
+    </section>
+    <h4 id="tit2">2. DATOS DE LA MADRE:</h4>
+    <h5 id="txt12">Nombres y Apellidos:</h5>
+    <input id="text6" type="text" required onkeypress="return SoloNumeros(event);"">
+    <h5 id="txt13">Edad:</h5>
+    <input id="text7" type="text" required onkeypress="return SoloNumeros(event);"">
+    <h5 id="txt14">Nacionalidad:</h5>
+    <input id="text8" type="text" required onkeypress="return SoloNumeros(event);"">
+    <h5 id="txt15">Número de documento de identificación:</h5>
+    <input id="text9" type="text" required onkeypress="return SoloNumeros(event);"">
+    <h5 id="txt16">Direccion:</h5>
+    <input id="text10" type="text" required onkeypress="return SoloNumeros(event);"">
+    
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <div id="radbut">
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+            DPI
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+            Cédula de Vecindad y Constancia
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Pasaporte
+        </label>
+    </div>
+    </div>
+    <section>
+    </section>
+    <br><br>
+
+    </section id="padre">
+    <h4 id="tit2">3. DATOS DEL PADRE:</h4>
+    <h5 id="txt12">Nombres y Apellidos:</h4>
+    <input id="text11" type="text" required onkeypress="return SoloNumeros(event);"">
+    <h5 id="txt13">Edad:</h5>
+    <input id="text12" type="text" required onkeypress="return SoloNumeros(event);"">
+    <h5 id="txt14">Nacionalidad:</h5>
+    <input id="text13" type="text" required onkeypress="return SoloNumeros(event);"">
+    <h5 id="txt15">Número de documento de identificación:</h5>
+    <input id="text14" type="text" required onkeypress="return SoloNumeros(event);"">
+    <h5 id="txt16">Direccion:</h5>
+    <input id="text15" type="text" required onkeypress="return SoloNumeros(event);"">
+
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <div id="radbut2">
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+            DPI
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+            Cédula de Vecindad y Constancia
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+        Pasaporte
+        </label>
+    </div>
+    </div>
+
+
+    <h5 id="txt20">Comparece a realizar la inscripción:</h5>
+
+    <div id="radbut3">
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+            SI
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+            NO
+        </label>
+    </div>
+    </div>
+
+    <section>
+    </section>
+
+    
+
+    <section>
+        <h4 id="tit3">4. DATOS DEL COMPARECIENTE:</h4>
+        <h6 id="tit4">(Consignar información si comparece a realizar la inscripción persona distinta al padre y/o la madre)</h6>
+        <h5 id="txt17">Nombres y Apellidos:</h5>
+        <input id="text16" type="text" required onkeypress="return SoloNumeros(event);"">
+        <h5 id="txt18">Número de documento de identificación:</h5>
+        <input id="text17" type="text" required onkeypress="return SoloNumeros(event);"">
+
+
+        <div id="radbut4">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    DPI
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Cédula de Vecindad y Constancia
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                Pasaporte
+                </label>
+            </div>
+            </div>
+
+            <h5 id="txt19">Direccion:</h5>
+            <input id="text18" type="text" required onkeypress="return SoloNumeros(event);""><br><br>
+            <p id="fin">Declaro que la información consignada en la presente solicitud de Inscripción de Nacimiento es verídica y correcta a la fecha de hoy. Entiendo y acepto que el Registro Nacional de las Personas -RENAP-
+                NO es responsable de información errónea, incongruente y/o inconsistente proporcionada por el compareciente de manera directa o indirecta que pueda inducir a error en la inscripción solicitada.</p>
+                <img id="final1" src="final.jpeg" alt="">
+        </section>
+</body>
+</html>
+
+
+
+
+
+
+
